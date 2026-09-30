@@ -1596,7 +1596,9 @@ def main() -> None:
             else:
                 data["last_daily_recap"] = iso_now()
                 save_json(data_file(), data)
-
+        if os.getenv("PRICE_TRACKER_ONCE", "").lower() == "true":
+            print("Controllo singolo completato.")
+            return
         completed = now()
         next_normal = completed + timedelta(minutes=config.CHECK_INTERVAL_MINUTES)
         next_fast: datetime | None = None
