@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.env - Copia.example
+.venv/
+__pycache__/
+*.pyc
+prezzi.json
+prezzi.json.bak
+.prezzi.json.*.tmp
+.price_tracker.lock
