@@ -40,7 +40,7 @@ jobs:
         run: python -m playwright install --with-deps chromium
 
       - name: Controlla i prezzi
-        run: python -u price_tracker.py
+        run: python -u price_tracker.py 
         
       - name: Salva lo storico dei prezzi
         run: |
