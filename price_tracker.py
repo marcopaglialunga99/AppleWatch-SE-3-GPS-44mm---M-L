@@ -1140,7 +1140,7 @@ def flush_telegram_outbox(data: dict[str, Any]) -> None:
             now() + timedelta(seconds=delay)
         ).isoformat(timespec="seconds")
         save_json(data_file(), data)
-        break
+        return
 
 def check_listing(listing_id: str, listing: dict[str, Any]) -> dict[str, Any]:
     url = listing["url"]
