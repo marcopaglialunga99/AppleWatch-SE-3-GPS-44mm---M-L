@@ -1076,30 +1076,64 @@ def telegram_link(url: str) -> str:
 
 
 def send_telegram_message(text: str) -> bool:
-    """Invia senza mai stampare l'URL Telegram, che contiene il token."""
-    url = f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}/sendMessage"
+    """Invia un messaggio senza stampare l'URL Telegram o il token."""
+    url = (
+        f"https://api.telegram.org/"
+        f"bot{config.TELEGRAM_BOT_TOKEN}/sendMessage"
+    )
     payload = {
         "chat_id": config.TELEGRAM_CHAT_ID,
         "text": text,
         "parse_mode": "HTML",
         "disable_web_page_preview": True,
     }
+
     try:
-        response = requests.post(url, data=payload, timeout=config.TELEGRAM_TIMEOUT)
-        response.raise_for_status()
-        result = response.json()
-        if not isinstance(result, dict) or result.get("ok") is not True:
-            print("[ERRORE] Telegram ha rifiutato il messaggio (risposta API non valida).")
-            return False
-        return True
+        response = requests.post(
+            url,
+            data=payload,
+            timeout=config.TELEGRAM_TIMEOUT,
+        )
     except requests.RequestException as exc:
-        status = getattr(getattr(exc, "response", None), "status_code", None)
-        suffix = f" HTTP {status}" if status else ""
-        print(f"[ERRORE] Invio Telegram fallito ({type(exc).__name__}{suffix}); token oscurato.")
+        print(
+            f"[ERRORE] Connessione a Telegram fallita "
+            f"({type(exc).__name__}); token oscurato."
+        )
         return False
-    except (ValueError, TypeError):
-        print("[ERRORE] Telegram ha restituito una risposta non interpretabile.")
+
+    try:
+        result = response.json()
+    except ValueError:
+        result = None
+
+    if response.status_code >= 400:
+        description = (
+            result.get("description")
+            if isinstance(result, dict)
+            else response.text[:500]
+        )
+        description = str(description or response.text[:500])
+
+        token = str(config.TELEGRAM_BOT_TOKEN or "")
+        if token:
+            description = description.replace(token, "[TOKEN]")
+
+        print(
+            f"[ERRORE] Telegram HTTP {response.status_code}: "
+            f"{description}"
+        )
         return False
+
+    if not isinstance(result, dict) or result.get("ok") is not True:
+        description = (
+            result.get("description")
+            if isinstance(result, dict)
+            else response.text[:500]
+        )
+        print(f"[ERRORE] Risposta Telegram non valida: {description}")
+        return False
+
+    return True
 
 
 def queue_telegram_message(data: dict[str, Any], text: str) -> None:
