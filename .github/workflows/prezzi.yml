@@ -10,7 +10,9 @@ on:
 
 permissions:
   contents: write
-
+concurrency:
+  group: controllo-prezzi
+  cancel-in-progress: false
 jobs:
   check-prices:
     runs-on: ubuntu-latest
