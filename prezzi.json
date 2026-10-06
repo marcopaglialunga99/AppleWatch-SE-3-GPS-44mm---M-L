@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "last_daily_recap": "2026-10-05T11:07:06+02:00",
+  "last_daily_recap": "2026-10-06T08:53:47+02:00",
   "pending_notifications": [],
   "telegram_retry_at": null,
   "sites": {
@@ -8,7 +8,7 @@
       "last": {
         "price": 309.0,
         "url": "https://www.apple.com/it/shop/buy-watch/apple-watch-se/44mm-gps-mezzanotte-alluminio-mezzanotte-cinturino-sport-m-l-se",
-        "checked_at": "2026-10-06T02:21:53+02:00",
+        "checked_at": "2026-10-06T08:53:22+02:00",
         "seller": null,
         "product_name": "Acquista Apple Watch SE 3 - Apple (IT)",
         "availability": "unknown",
@@ -231,18 +231,25 @@
           "seller": null,
           "availability": "unknown",
           "source": "playwright"
+        },
+        {
+          "price": 309.0,
+          "checked_at": "2026-10-06T08:53:22+02:00",
+          "seller": null,
+          "availability": "unknown",
+          "source": "playwright"
         }
       ],
       "consecutive_failures": 0,
       "last_error": null,
-      "last_success_at": "2026-10-06T02:21:53+02:00",
+      "last_success_at": "2026-10-06T08:53:22+02:00",
       "last_error_at": null
     },
     "euronics_mezzanotte_banda_mezzanotte_ml": {
       "last": {
-        "price": 309.0,
+        "price": 287.0,
         "url": "https://www.euronics.it/telefonia/wearable/smartwatch/apple---watch-se-3-gps-44mm-alluminio-sport-band-mezzanotte---m-l/252011591.html",
-        "checked_at": "2026-10-06T02:21:54+02:00",
+        "checked_at": "2026-10-06T08:53:23+02:00",
         "seller": null,
         "product_name": "APPLE - Watch SE 3 GPS 44mm Alluminio-Sport Band Mezzanotte - M/L | Euronics",
         "availability": "available",
@@ -465,18 +472,25 @@
           "seller": null,
           "availability": "available",
           "source": "requests"
+        },
+        {
+          "price": 287.0,
+          "checked_at": "2026-10-06T08:53:23+02:00",
+          "seller": null,
+          "availability": "available",
+          "source": "requests"
         }
       ],
       "consecutive_failures": 0,
       "last_error": null,
-      "last_success_at": "2026-10-06T02:21:54+02:00",
+      "last_success_at": "2026-10-06T08:53:23+02:00",
       "last_error_at": null
     },
     "euronics_mezzanotte_blu_marino_ml": {
       "last": {
         "price": 309.0,
         "url": "https://www.euronics.it/telefonia/wearable/smartwatch/apple---watch-se-3-gps-44mm-alluminio-mezzanotte-sport-band-blu-marino---m-l/262010916.html",
-        "checked_at": "2026-10-06T02:21:55+02:00",
+        "checked_at": "2026-10-06T08:53:24+02:00",
         "seller": null,
         "product_name": "APPLE - Watch SE 3 GPS 44mm Alluminio Mezzanotte-Sport Band Blu marino - M/L | Euronics",
         "availability": "available",
@@ -699,18 +713,25 @@
           "seller": null,
           "availability": "available",
           "source": "requests"
+        },
+        {
+          "price": 309.0,
+          "checked_at": "2026-10-06T08:53:24+02:00",
+          "seller": null,
+          "availability": "available",
+          "source": "requests"
         }
       ],
       "consecutive_failures": 0,
       "last_error": null,
-      "last_success_at": "2026-10-06T02:21:55+02:00",
+      "last_success_at": "2026-10-06T08:53:24+02:00",
       "last_error_at": null
     },
     "unieuro_mezzanotte_mezzanotte_ml": {
       "last": {
         "price": 309.0,
         "url": "https://www.unieuro.it/online/Smartwatch/Watch-SE-3-GPS-44mm-Cassa-Alluminio-Mezzanotte-con-Sport-Band-Mezzanotte---M-L-pidAPLSE3GPS44MAMSBML",
-        "checked_at": "2026-10-06T02:22:00+02:00",
+        "checked_at": "2026-10-06T08:53:27+02:00",
         "seller": null,
         "product_name": "Apple Watch SE (3nd generation) SE 3 GPS 44mm Cassa Alluminio Mezzanotte con Sport Band Mezzanotte - M/L | Smartwatch in offerta su Unieuro",
         "availability": "unknown",
@@ -933,18 +954,25 @@
           "seller": null,
           "availability": "unknown",
           "source": "requests"
+        },
+        {
+          "price": 309.0,
+          "checked_at": "2026-10-06T08:53:27+02:00",
+          "seller": null,
+          "availability": "unknown",
+          "source": "requests"
         }
       ],
       "consecutive_failures": 0,
       "last_error": null,
-      "last_success_at": "2026-10-06T02:22:00+02:00",
+      "last_success_at": "2026-10-06T08:53:27+02:00",
       "last_error_at": null
     },
     "expert_mezzanotte_blu_marino_ml": {
       "last": {
         "price": 309.9,
         "url": "https://www.expert.it/it/it/exp/shop/product/watch-se-3-gps-cassa-44-mm-in-alluminio-mezzanotte-con-cinturino-sport-blu-mari/exp933162",
-        "checked_at": "2026-10-06T02:22:02+02:00",
+        "checked_at": "2026-10-06T08:53:29+02:00",
         "seller": null,
         "product_name": "APPLE Apple Watch WATCH SE 3 GPS, CASSA 44 MM IN ALLUMINIO MEZZANOTTE CON CINTURINO SPORT BLU MARINO - M/L  | Expert Italia",
         "availability": "unknown",
@@ -1160,18 +1188,25 @@
           "seller": null,
           "availability": "unknown",
           "source": "requests"
+        },
+        {
+          "price": 309.9,
+          "checked_at": "2026-10-06T08:53:29+02:00",
+          "seller": null,
+          "availability": "unknown",
+          "source": "requests"
         }
       ],
       "consecutive_failures": 0,
       "last_error": null,
-      "last_success_at": "2026-10-06T02:22:02+02:00",
+      "last_success_at": "2026-10-06T08:53:29+02:00",
       "last_error_at": null
     },
     "mediaworld_mezzanotte_blu_marino_ml": {
       "last": {
         "price": 249.0,
         "url": "https://www.mediaworld.it/it/product/_apple-apple-wtcse3gps44-alluminio-594759.html",
-        "checked_at": "2026-10-06T02:22:10+02:00",
+        "checked_at": "2026-10-06T08:53:36+02:00",
         "seller": null,
         "product_name": "APPLE Watch SE 3 GPS, Cassa 44 mm in alluminio mezzanotte con Cinturino Sport blu marino | M/L | MediaWorld.it",
         "availability": "available",
@@ -1394,18 +1429,25 @@
           "seller": null,
           "availability": "available",
           "source": "playwright"
+        },
+        {
+          "price": 249.0,
+          "checked_at": "2026-10-06T08:53:36+02:00",
+          "seller": null,
+          "availability": "available",
+          "source": "playwright"
         }
       ],
       "consecutive_failures": 0,
       "last_error": null,
-      "last_success_at": "2026-10-06T02:22:10+02:00",
+      "last_success_at": "2026-10-06T08:53:36+02:00",
       "last_error_at": null
     },
     "trony_mezzanotte_blu_marino_ml": {
       "last": {
         "price": 309.0,
         "url": "https://www.trony.it/telefonia/apple-apple-watch-se-3-gps-cassa-44-mm-in-alluminio-mezzanotte-con-cinturino-sport-blu-marino-m-l-2260010335/",
-        "checked_at": "2026-10-06T02:22:18+02:00",
+        "checked_at": "2026-10-06T08:53:44+02:00",
         "seller": null,
         "product_name": "APPLE \n                                    -  Apple Watch SE 3 GPS, Cassa 44 mm in alluminio mezzanotte con Cinturino Sport blu marino \n                                    -  M/L",
         "availability": "available",
@@ -1628,18 +1670,25 @@
           "seller": null,
           "availability": "available",
           "source": "playwright"
+        },
+        {
+          "price": 309.0,
+          "checked_at": "2026-10-06T08:53:44+02:00",
+          "seller": null,
+          "availability": "available",
+          "source": "playwright"
         }
       ],
       "consecutive_failures": 0,
       "last_error": null,
-      "last_success_at": "2026-10-06T02:22:18+02:00",
+      "last_success_at": "2026-10-06T08:53:44+02:00",
       "last_error_at": null
     },
     "comet_mezzanotte_blu_marino_ml": {
       "last": {
         "price": 309.0,
         "url": "https://www.comet.it/apple-watch-se-3-gps-44mm-m-l-cassa-alluminio-mezzanotte-e-sport-band-blu-marino-APL049605-prdtt",
-        "checked_at": "2026-10-06T02:22:18+02:00",
+        "checked_at": "2026-10-06T08:53:45+02:00",
         "seller": null,
         "product_name": "Apple Watch SE 3 GPS 44MM M/L Cassa Alluminio Mezzanotte e Sport Band Blu Marino Sped. gratis da 99€",
         "availability": "available",
@@ -1862,18 +1911,25 @@
           "seller": null,
           "availability": "available",
           "source": "requests"
+        },
+        {
+          "price": 309.0,
+          "checked_at": "2026-10-06T08:53:45+02:00",
+          "seller": null,
+          "availability": "available",
+          "source": "requests"
         }
       ],
       "consecutive_failures": 0,
       "last_error": null,
-      "last_success_at": "2026-10-06T02:22:18+02:00",
+      "last_success_at": "2026-10-06T08:53:45+02:00",
       "last_error_at": null
     },
     "rstore_mezzanotte_mezzanotte_ml": {
       "last": {
         "price": 309.0,
         "url": "https://www.rstore.it/products/2026-apple-watch-se-cinturino-sport-3-generazione-mjl94ql-a",
-        "checked_at": "2026-10-06T02:22:20+02:00",
+        "checked_at": "2026-10-06T08:53:47+02:00",
         "seller": null,
         "product_name": "Apple Watch SE 3 GPS, Cassa 44 mm in alluminio mezzanotte con Cinturin\n – R-Store",
         "availability": "unknown",
@@ -2096,11 +2152,18 @@
           "seller": null,
           "availability": "unknown",
           "source": "requests"
+        },
+        {
+          "price": 309.0,
+          "checked_at": "2026-10-06T08:53:47+02:00",
+          "seller": null,
+          "availability": "unknown",
+          "source": "requests"
         }
       ],
       "consecutive_failures": 0,
       "last_error": null,
-      "last_success_at": "2026-10-06T02:22:20+02:00",
+      "last_success_at": "2026-10-06T08:53:47+02:00",
       "last_error_at": null
     }
   }
